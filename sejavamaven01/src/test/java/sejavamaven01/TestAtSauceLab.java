@@ -26,13 +26,13 @@ public class TestAtSauceLab {
 		options.setBrowserVersion("latest");
 
 		Map<String, Object> sauceOptions = new HashMap<>();
-		sauceOptions.put("username", System.getenv("oauth-sac090909-da1c8"));
-		sauceOptions.put("accessKey", System.getenv("77496786-f9f8-46ad-8099-2fc1abeb05ad"));
+		sauceOptions.put("username", System.getenv("xxx"));
+		sauceOptions.put("accessKey", System.getenv("xxx"));
 		//sauceOptions.put("name", testInfo.getDisplayName());
 
 		options.setCapability("sauce:options", sauceOptions);
 		
-		URL url = new URL("https://oauth-sac090909-da1c8:77496786-f9f8-46ad-8099-2fc1abeb05ad@ondemand.us-west-1.saucelabs.com:443/wd/hub");
+		URL url = new URL("xxx");
 
 		RemoteWebDriver driver = new RemoteWebDriver(url, options);
 		
